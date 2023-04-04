@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Box-shadow Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper-bsg">
+           <div class="boxShadowGen">
+                <div class="boxShadowGen-preview">
+                    <div class="boxShadowGen-preview__item"></div>
+                </div>
+
+                <div class="boxShadowGen-settings">
+                    <div class="boxShadowGen-property-container">
+                        <label for="h-shadow">Horizontal Shadow</label>
+                        <input type="range"  class="shadow-property" min="-100" max="100" value="0" id="h-shadow" />
+                    </div>
+                    <div class="boxShadowGen-property-container">
+                        <label for="v-shadow">Vertical Shadow</label>
+                        <input type="range"  class="shadow-property" min="-100" max="100" value="0" id="v-shadow" />
+                    </div>
+                    <div class="boxShadowGen-property-container">
+                        <label for="blur-radius">Blur radius</label>
+                        <input type="range"  class="shadow-property" min="0" max="100" value="0" id="blur-radius" />
+                    </div>
+                    <div class="boxShadowGen-property-container">
+                        <label for="spread-radius">Spread radius</label>
+                        <input type="range"  class="shadow-property" min="-50" max="50" value="0" id="spread-radius" />
+                    </div>
+                    <div class="boxShadowGen-property-container boxShadowGen-property-container__online">
+                        <input type="color"  class="shadow-property"id="shadow-color" />
+                        <label for="shadow-color">Shadow color</label>
+                    </div>
+                    <div class="boxShadowGen-property-container">
+                        <label for="shadow-color-opacity">Shadow color opacity</label>
+                        <input type="range"  class="shadow-property" min="0" max="1" step=".1" value="1" id="shadow-color-opacity" />
+                    </div>
+                    <div class="boxShadowGen-property-container boxShadowGen-property-container__online">
+                        <input type="checkbox"  class="shadow-property" id="shadow-inset" />
+                        <label for="shadow-inset">Shadow inset</label>
+                    </div>
+                </div>
+                <div class="boxShadowGen-result">
+                    <textarea  class="boxShadowGen-result__css" id="result-css" rows="2"></textarea>
+                    <button class="boxShadowGen-result__btn" id="btn-copy">Copy</button>
+                </div>
+           </div> 
+        </div>
+    </div>
+
+    <script src="./sctipt.js"></script>
+</body>
+</html>
