@@ -12,7 +12,7 @@
         <div class="wrapper-bsg">
            <div class="boxShadowGen">
                 <div class="boxShadowGen-preview">
-                    <div class="boxShadowGen-preview__item"></div>
+                    <div class="boxShadowGen-preview__item" id="item"></div>
                 </div>
 
                 <div class="boxShadowGen-settings">
@@ -39,6 +39,10 @@
                     <div class="boxShadowGen-property-container">
                         <label for="shadow-color-opacity">Shadow color opacity</label>
                         <input type="range"  class="shadow-property" min="0" max="1" step=".1" value="1" id="shadow-color-opacity" />
+                    </div>
+                    <div class="boxShadowGen-property-container boxShadowGen-property-container__online">
+                        <input type="color"  class="shadow-property" id="block-color" />
+                        <label for="block-color">Block color</label>
                     </div>
                     <div class="boxShadowGen-property-container boxShadowGen-property-container__online">
                         <input type="checkbox"  class="shadow-property" id="shadow-inset" />

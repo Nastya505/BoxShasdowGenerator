@@ -42,7 +42,7 @@ body{
 .boxShadowGen-preview__item{
     width: 50px;
     height: 50px;
-    background-color: #8a2be2;
+    background-color: #000;
 }
 .boxShadowGen-settings{
     display: grid;
@@ -58,6 +58,25 @@ body{
     flex-direction: row;
     gap: .5rem;
     align-items: center;
+}
+
+input[type=range].shadow-property{
+    background: #c7c7c7;
+    height: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border-radius: var(--rad-big);
+}
+
+input[type=range].shadow-property::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: red;
+    border-radius:var(--rad-big);
+    height: 15px;
+    width: 15px;
+    cursor: ew-resize; 
 }
 .boxShadowGen-result{
     display: grid;
