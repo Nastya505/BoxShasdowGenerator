@@ -22,14 +22,14 @@ body{
     box-sizing: border-box;
 }
 .wrapper-bsg{
-    margin-top: 50px;
+    margin: 50px 0;
     margin-inline: auto;
     width: 100%;
 }
 .boxShadowGen{
     padding: 30px;
     background-color: #fff;
-    border-radius: var(--rad-big);
+    border-radius: 10px;
 
 }
 .boxShadowGen-preview{
@@ -72,7 +72,7 @@ input[type=range].shadow-property{
 
 input[type=range].shadow-property::-webkit-slider-thumb{
     -webkit-appearance: none;
-    background: red;
+    background: #5f5f5f;
     border-radius:var(--rad-big);
     height: 15px;
     width: 15px;
@@ -82,7 +82,7 @@ input[type=range].shadow-property::-webkit-slider-thumb{
     display: grid;
     grid-template-columns: 10fr 2fr;
     column-gap: 1rem;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .boxShadowGen-result__css{
     resize: none;
@@ -98,4 +98,17 @@ input[type=range].shadow-property::-webkit-slider-thumb{
     cursor: pointer;
     background-color: #5f5f5f;
     color: #fff;
+}
+
+@media (max-width: 600px){
+    .boxShadowGen-settings{
+        grid-template-columns: 1fr;
+    }
+    .boxShadowGen-result{
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    .boxShadowGen{
+        padding: 10px;
+    }
 }
